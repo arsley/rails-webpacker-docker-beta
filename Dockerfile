@@ -1,7 +1,8 @@
 FROM ruby:2.6.1-slim
-# ARG precompileassets
+ARG precompileassets
 
 RUN apt-get -y update && \
+    mkdir -p /usr/share/man/man1 /usr/share/man/man7 && \
     apt-get install --fix-missing --no-install-recommends -qq -y \
       build-essential vim wget gnupg git-all curl ssh postgresql-client libpq5 libpq-dev -y && \
     curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -  && \
@@ -26,4 +27,4 @@ ENV INSTALL_PATH $INSTALL_PATH
 WORKDIR $INSTALL_PATH
 COPY . .
 
-# RUN scripts/ptential_asset_precompile.sh $precompileassets
+RUN scripts/potential_asset_precompile.sh $precompileassets

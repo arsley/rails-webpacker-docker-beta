@@ -7,3 +7,4 @@
 - [soulmates-ai/docker-rails-demo: Demo app for Rails, Docker and Webpack](https://github.com/soulmates-ai/docker-rails-demo)
 - [distributions/README.md at master · nodesource/distributions](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
 - [Installation | Yarn](https://yarnpkg.com/lang/en/docs/install/#debian-stable)
+- [postgresql - How to fix error on postgres install ubuntu - Stack Overflow](https://stackoverflow.com/questions/51033689/how-to-fix-error-on-postgres-install-ubuntu)
