@@ -5,10 +5,10 @@ RUN apt-get -y update && \
     mkdir -p /usr/share/man/man1 /usr/share/man/man7 && \
     apt-get install --fix-missing --no-install-recommends -qq -y \
       build-essential vim wget gnupg git-all curl ssh postgresql-client libpq5 libpq-dev -y && \
-    curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -  && \
-    sudo apt-get install -y nodejs && \
-    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - && \
-    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list && \
+    curl -sL https://deb.nodesource.com/setup_11.x | bash -  && \
+    apt-get install -y nodejs && \
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
     apt-get update && apt-get install yarn && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists* /tmp/* /var/tmp/*
