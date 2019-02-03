@@ -1,5 +1,13 @@
 # Rails webpacker docker (6.0.0.beta1)
 
+## Environment
+
+- Ruby 2.6.1
+- Rails 6.0.0.beta1
+- Node 11.3
+- yarn 1.13.0
+- postgres 9
+
 ## Refs
 
 - [Running a Rails app with Webpacker and Docker – Soulmates.AI – Medium](https://medium.com/soulmates-ai/running-a-rails-app-with-webpacker-and-docker-8d29153d3446)
