@@ -13,7 +13,9 @@ RUN apt-get -y update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists* /tmp/* /var/tmp/*
 
-RUN gem i bundler
+# Install bunder and remove dafault version
+RUN gem i bundler -v 1.17.3
+RUN rm /usr/local/lib/ruby/gems/2.6.0/specifications/default/bundler-1.17.2.gemspec
 
 # Install gem to global
 WORKDIR /gems
