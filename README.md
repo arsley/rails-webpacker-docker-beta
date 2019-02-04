@@ -8,6 +8,16 @@
 - yarn 1.13.0
 - postgres 9
 
+## Initialize
+
+```
+docker-compose build
+docker-compose run web scripts/wait-for-it.sh db:5432 -- 'rails db:create db:migrate'
+
+# run
+docker-compose up
+```
+
 ## Refs
 
 - [Running a Rails app with Webpacker and Docker – Soulmates.AI – Medium](https://medium.com/soulmates-ai/running-a-rails-app-with-webpacker-and-docker-8d29153d3446)
