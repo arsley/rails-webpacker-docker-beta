@@ -3,9 +3,16 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-import '../javascripts/static';
+// Initialize stimulus' config
+import { Application } from 'stimulus'
+import { definitionsFromContext } from 'stimulus/webpack-helpers'
 
-require('@rails/ujs').start();
-require('turbolinks').start();
-require('@rails/activestorage').start();
-require('channels');
+const application = Application.start()
+const context = require.context('../javascripts/controllers', true, /\.js$/)
+application.load(definitionsFromContext(context))
+// end initializing of stimulus
+
+require('@rails/ujs').start()
+require('turbolinks').start()
+require('@rails/activestorage').start()
+require('channels')

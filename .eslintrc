@@ -18,7 +18,7 @@
     "no-console": "off",
     "react/prop-types": "warn",
     "react/react-in-jsx-scope": "off",
-    "semi": "warn",
+    "semi": "off",
     "arrow-body-style": "warn",
     "comma-dangle": "warn",
     "no-plusplus": ["warn", { "allowForLoopAfterthoughts": true }],
