@@ -27,3 +27,11 @@ docker-compose up
 - [distributions/README.md at master · nodesource/distributions](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
 - [Installation | Yarn](https://yarnpkg.com/lang/en/docs/install/#debian-stable)
 - [postgresql - How to fix error on postgres install ubuntu - Stack Overflow](https://stackoverflow.com/questions/51033689/how-to-fix-error-on-postgres-install-ubuntu)
+- [Rails ジェネレータとテンプレート入門 | Rails ガイド](https://railsguides.jp/generators.html)
+- [Make your own gem - RubyGems Guides](https://guides.rubygems.org/make-your-own-gem/)
+
+---
+
+- [jbuilder/jbuilder_generator.rb at master · rails/jbuilder](https://github.com/rails/jbuilder/blob/master/lib/generators/rails/jbuilder_generator.rb)
+- [rails/controller_generator.rb at 94b5cd3a20edadd6f6b8cf0bdf1a4d4919df86cb · rails/rails](https://github.com/rails/rails/blob/94b5cd3a20edadd6f6b8cf0bdf1a4d4919df86cb/railties/lib/rails/generators/erb/controller/controller_generator.rb)
+- [react-rails/component_generator.rb at master · reactjs/react-rails](https://github.com/reactjs/react-rails/blob/master/lib/generators/react/component_generator.rb)
