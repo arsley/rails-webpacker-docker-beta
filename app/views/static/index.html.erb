@@ -1,6 +1,6 @@
 <h1>Static#index</h1>
 
-<div data-controller="static">
-  <input type="text">
-  <button>Greet</button>
+<div data-controller="static--index">
+  <input data-target="static--index.name" type="text">
+  <button data-action="click->static--index#greet">Greet</button>
 </div>
